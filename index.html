@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            Quiz
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+    </head>
+    <body background="https://down.imgspng.com/download/0720/question_mark_PNG113.png">
+            <div class="container">
+                <center>
+                    <h1 id="header1">Quiz</h1>
+                    <b>This is a <em>quiz</em> to <strong>test</strong> your math knowledge.</b>
+                    <button id="startButton" class="btn btn-info" onclick="start()">Start</button>
+                    <hr>
+                    <div id="qvsa">
+                        <label>Check:</label>
+                    </div>
+                    <div>
+                       <b><span id="percentage"></span></b>
+                    </div>
+                    <div id="questions">
+                        <hr>
+                        <div id="q1">
+                        <h2>1.</h2>
+                        <b>What's 2 + 3^2 - 9 × (2 - 2)?</b>
+                        <input type="input" id="answer1" placeholder="Type your answer here">
+                        <button id="sumbit1" class="btn btn-success" onclick="sumbit1()">Sumbit</button>
+                        </div>
+                        <hr>
+                        <div id="q2">
+                        <h2>2.</h2>
+                        <b>What equation did you do first? 2 + 3^2 - 9 × (2 - 2)</b>
+                        <input type="input" id="answer2" placeholder="Type your answer here">
+                        <button id="sumbit2" class="btn btn-success" onclick="sumbit2()">Sumbit</button>
+                        </div>
+                        <hr>
+                        <div id="q3">
+                        <h2>3.</h2>
+                        <b>What equation did you do second? 2 + 3^2 - 9 × (2 - 2)</b>
+                        <input type="input" id="answer3" placeholder="Type your answer here">
+                        <button id="sumbit3" class="btn btn-success" onclick="sumbit3()">Sumbit</button>
+                        </div>
+                        <hr>
+                        <div id="q4">
+                        <h2>4.</h2>
+                        <b>What was the final equation you did? 2 + 3^2 - 9 × (2 - 2)</b>
+                        <input type="input" id="answer4" placeholder="Type your answer here">
+                        <button id="sumbit4" class="btn btn-success" onclick="sumbit4()">Sumbit</button>
+                        </div>
+                        <hr>
+                        <div id="q5">
+                        <h2>5.</h2>
+                        <b>List the order of operations that you did. Ex: Multiplication, Additon, and Etc. 2 + 3^2 - 9 × (2 - 2)</b>
+                        <input type="input" id="answer5" placeholder="Type your answer here">
+                        <button id="sumbit5" class="btn btn-success" onclick="sumbit5()">Sumbit</button>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        <script src="main.js"></script>
+    </body>
+</html>
